@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow-y: scroll;
+    border-right: 4px solid gray;
+    padding-right: 10px;
+    max-height: 94vh;
+    padding-bottom: 20px;
+}
+
+#main-doc {
+    margin-left: 275px;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 700px;
+    }
+    #main-doc {
+        margin-left: 300px;
+    }
+}
+
+#navbar a {
+    text-decoration: none;
+    color: gray;
+}
+
+.code-example {
+    width: 80%;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+p, li {
+    color: rgb(80, 80, 80);
+}
+
+#navbar-title {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.nav-link[href="#what_you_should_already_know"] {
+    border-bottom: none;
+}
+
+.nav-link {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+}
